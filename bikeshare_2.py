@@ -189,17 +189,17 @@ def display_data(city):
     
     # while loop requesting to display raw data and displaying
     # the  next 5 rows of raw data everytime 'yes' is inputted
-    raw_data = input('Would you like to display 10 lines of raw data? Enter yes or no.\n')
+    raw_data = input('Would you like to display 100 lines of raw data? Enter yes or no.\n')
     x = 0
-    y = 10
+    y = 100
     while True:
         if raw_data.lower() != 'yes':
             break
         else:
             print(df[x:y]) 
-            raw_data = input('\nWould you like to display the next 10 lines of raw data? Enter yes or no.\n')
-            x += 10
-            y += 10
+            raw_data = input('\nWould you like to display the next 100 lines of raw data? Enter yes or no.\n')
+            x += 100
+            y += 100
 
 
 
